@@ -275,10 +275,9 @@ class MujocoObject(MujocoModel):
         }
 
 
-class MujocoXMLObject(MujocoObject, MujocoXML):
+class MujocoXMLObject(MujocoXML, MujocoObject):
     """
-    MujocoObjects that are loaded from xml files (by default, inherit all properties (e.g.: name)
-    from MujocoObject class first!)
+    MujocoObjects that are loaded from xml files
 
     Args:
         fname (str): XML File path
